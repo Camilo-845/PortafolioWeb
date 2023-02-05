@@ -6,7 +6,12 @@
 html{
   scroll-behavior:smooth;
 }
-
+#footer{
+  background-color: azure;
+}
+#footer h3{
+  margin: 0px;
+}
 .logo {
   height: 6em;
   padding: 1.5em;

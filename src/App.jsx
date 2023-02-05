@@ -15,6 +15,9 @@ function App() {
       <Resume></Resume>
       <Work></Work>
       <Contact></Contact>
+      <div id='footer'>
+        <h3>Pagina diseñada y creada por Camilo Sarmiento</h3>
+      </div>
     </div>
   )
 }
