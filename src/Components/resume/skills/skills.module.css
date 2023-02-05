@@ -1,0 +1,7 @@
+.mainContainer{
+    height: 100vh;
+    background-color: aquamarine;
+}
+.mainContainer h1{
+    margin: 0px;
+}
