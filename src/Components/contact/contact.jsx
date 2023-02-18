@@ -3,10 +3,11 @@ import styles from "./Contact.module.css"
 import { useState } from "react";
 import GitHubImage from "../../assets/github.png";
 import LinkedInImage from "../../assets/linkedin.png"
-import useDispatch from "react-redux"
+import { useSelector, useDispatch } from "react-redux";
 import { postMail } from "../../redux/actions";
 
 function Contact() {
+
     const dispatch = useDispatch()
 
     const [state, setState] = useState({
@@ -21,7 +22,6 @@ function Contact() {
         })
     }
     const HandleSubmit = (e) => {
-        console.log(state)
         e.preventDefault();
         dispatch(postMail(state))
         setState({
