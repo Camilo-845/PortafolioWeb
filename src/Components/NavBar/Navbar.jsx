@@ -16,7 +16,8 @@ function NavBar() {
             <button className={styles.darkMode}>
                 {/* <img src="" alt="" /> */}
             </button>
-            <button className={styles.Traslate}>
+            <button className={styles.traslate}>
+                EN
                 {/* <img src="" alt="" /> */}
             </button>
         </div>

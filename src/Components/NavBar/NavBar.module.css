@@ -1,9 +1,12 @@
 .mainContainer{
+    width: 99%;
+    position: fixed;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding-right: 10px;
     height: 40px;
+    z-index: 1;
 /*     background-color: rgb(65, 63, 63);
  */}
 .mainContainer div{
@@ -22,4 +25,15 @@
 .mainContainer button img{
     width: 100%;
     height: 100%;
+}
+.traslate{
+    font-weight: 1000;
+    color: white;
+    background-color: transparent;
+}
+
+.darkMode{
+    background-image: url("../../assets/moon-svgrepo-com_white.png");
+    background-color: transparent;
+    background-size: 100%;
 }
