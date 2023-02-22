@@ -4,13 +4,17 @@ import styles from "./resume.module.css"
 import About from "./About/About";
 import Education from "./Education/Education"
 import Skills from "./Skills/Skills"
+import ResumeNavbar from "./ResumeNavbar/ResumeNavbar";
 
-function Resume(){
+function Resume() {
     return (
         <div id="resume" className={styles.mainContainer}>
-            <About></About>
-            <Skills></Skills>
-            <Education></Education>
+            <ResumeNavbar></ResumeNavbar>
+            <div className={styles.componentsContainer}>
+                <About></About>
+                <Skills></Skills>
+                <Education></Education>
+            </div>
         </div>
     )
 }
