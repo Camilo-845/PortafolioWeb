@@ -1,7 +1,25 @@
 .mainContainer{
     height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 /*     background-color: #faead6ba; */
 }
 .mainContainer h1{
     margin: 0px;
+}
+.dataContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 50%;
+    background-color: gray;
+    font-size: xx-large;
+}
+.dataContainer h2{
+    margin: 0px;
+    height: 100%;
+    text-align: center;
 }

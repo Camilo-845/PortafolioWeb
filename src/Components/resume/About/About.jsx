@@ -4,7 +4,11 @@ import styles from "./About.module.css"
 function about() {
     return (
         <div className={styles.mainContainer}>
-            <h1>About</h1>
+            <div className={styles.dataContainer}>
+                <h2>
+                    
+                </h2>
+            </div>
         </div>
     )
 }
