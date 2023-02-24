@@ -88,7 +88,7 @@ export const EDUCATION_DATA = [
     image:"https://startupeable.com/directorio/wp-content/uploads/2021/03/d4face92a7abc37a414e0bc3acf4ff23ec588438.png",
   },
   {
-    name:"UniMagdalena",
+    name:"Universidad del Magdalena",
     description:"Systems Engineer",
     time:"2022 - 2026",
     image:"https://bloque10.unimagdalena.edu.co/wp-content/uploads/2021/06/Escudo-Color-Texto-azul-1-1024x1024.png",
