@@ -3,23 +3,82 @@
     display: flex;
     align-items: center;
     justify-content: center;
-/*     background-color: #faead6ba; */
-}
-.mainContainer h1{
-    margin: 0px;
+    /*     background-color: #faead6ba; */
 }
 .dataContainer{
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
-    height: 70%;
-    width: 50%;
+    height: min-content;
+    width: 60%;
     background-color: gray;
-    font-size: xx-large;
+    font-size: 1.1rem;
+    border-radius: 3rem;
+    text-align: left;
+    padding: 2rem;
+    color: white;
 }
 .dataContainer h2{
     margin: 0px;
-    height: 100%;
-    text-align: center;
+}
+.dataContainer h3{
+    margin: 0px;
+    color: rgb(235, 235, 235);
+    font-size: 1.4rem;
+/*     height: 100%;
+    text-align: center; */
+}
+.imageContiner{
+    position:absolute;
+    width: 7rem;
+    right: -3rem;
+    top:-3rem;
+}
+.imageContiner img{
+    width: 100%;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 1400px) {
+    .dataContainer {
+      font-size: 1.0rem;
+    }
+    .dataContainer h3 {
+      font-size: 1.3rem;
+    }
+}
+
+/*  Tabletas */ 
+
+@media (max-width: 768px) {
+    .dataContainer{
+        width: 80%;
+    }
+    .dataContainer h3 {
+      font-size: 1.2rem;
+    }
+    .imageContiner{
+        right: 40%;
+        top: -4.5rem;
+        width: 6rem;
+    }
+}
+
+/* Celulares  */
+
+@media (max-width: 470px) {
+    .dataContainer {
+        width: 80%;
+        font-size: 0.9rem;
+    }
+    .dataContainer h3 {
+      font-size: 1rem;
+    }
+    .imageContiner{
+        top:-3rem;
+        width: 5rem;
+    }
 }

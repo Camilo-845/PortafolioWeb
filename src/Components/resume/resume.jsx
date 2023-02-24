@@ -8,14 +8,14 @@ import ResumeNavbar from "./ResumeNavbar/ResumeNavbar";
 
 function Resume() {
     return (
-/*         <div id="resume" className={styles.mainContainer}>
-            <ResumeNavbar></ResumeNavbar> */
+        /* <div id="resume" className={styles.mainContainer}> */
+            /* <ResumeNavbar></ResumeNavbar> */
             <div className={styles.componentsContainer}>
                 <About></About>
                 <Skills></Skills>
                 <Education></Education>
             </div>
-/*         </div> */
+        /* </div> */
     )
 }
 
