@@ -73,3 +73,24 @@ export const SKILLS_DATA = {
     },
   ],
 };
+
+export const EDUCATION_DATA = [
+  {
+    name:"Min. TIC Colombia / UNAL",
+    description:"General formation in programing skills",
+    time:"May. 2021 - Dec. 2021",
+    image:"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Logotipo_de_la_Universidad_Nacional_de_Colombia.svg/1024px-Logotipo_de_la_Universidad_Nacional_de_Colombia.svg.png",
+  },
+  {
+    name:"Henry",
+    description:"Full Stack Developer",
+    time:"Ago. 2022 - Dec. 2022",
+    image:"https://startupeable.com/directorio/wp-content/uploads/2021/03/d4face92a7abc37a414e0bc3acf4ff23ec588438.png",
+  },
+  {
+    name:"UniMagdalena",
+    description:"Systems Engineer",
+    time:"2022 - 2026",
+    image:"https://bloque10.unimagdalena.edu.co/wp-content/uploads/2021/06/Escudo-Color-Texto-azul-1-1024x1024.png",
+  },
+]
