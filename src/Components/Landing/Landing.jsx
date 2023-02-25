@@ -15,7 +15,7 @@ function Landing(){
                         <img className={styles.downloadImage} src={downloadImage} alt="" />
                         CV
                     </button>
-                    <button>Contact</button>
+                    <a href="#contact"><button>Contact</button></a>
                 </div>
             </div>
         </div>

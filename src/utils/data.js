@@ -7,6 +7,8 @@ export const PROFILE_DATA = {
     "Tengo un año de experiencia desarrollando proyectos, tanto por mi cuenta como en equipo. Siempre con una actitud colaborativa, dispuesto ayudar y recibir ayuda.",
 };
 
+
+
 export const SKILLS_DATA = {
   principal: [
     {
@@ -74,6 +76,8 @@ export const SKILLS_DATA = {
   ],
 };
 
+
+
 export const EDUCATION_DATA = [
   {
     name:"Min. TIC Colombia / UNAL",
@@ -94,3 +98,52 @@ export const EDUCATION_DATA = [
     image:"https://bloque10.unimagdalena.edu.co/wp-content/uploads/2021/06/Escudo-Color-Texto-azul-1-1024x1024.png",
   },
 ]
+
+
+
+export const WORK_DATA = {
+  principal:[
+    {
+      name:"CoinTracker",
+      image:"https://raw.githubusercontent.com/AleSangronis/AleSangronis/main/coinn.png",
+      description:"<p>Website for cryptocurrency lovers</p><br><ol><li>Typescript, React, Redux, Node, MongoDB.</li><li>Desarrollo de aplicacion para el seguimiento de criptomonedas (FULL STACK)</li><li>Consumo de API Rest y derivación de datos</li><li>Creación e interconexión entre Microservicios internos y externos con BDD u otras células del proyecto</li></ol>",
+      deploy:{
+        icon:"https://www.svgrepo.com/show/480687/rocket.svg",
+        link:"https://pf-03-cointracker.vercel.app/"
+      },
+      repository:{
+        icon:"https://www.svgrepo.com/show/475654/github-color.svg",
+        link:"https://github.com/PF-03/CoinTracker",
+      },
+    },
+    {
+      name:"VideoGames",
+      image:"https://media.licdn.com/dms/image/C4E2DAQHyHmZbmwTfPA/profile-treasury-image-shrink_800_800/0/1669234501095?e=1677898800&v=beta&t=O6K6BsBsxe_xOE5c5DwjyEVArWxJ-PXAagdbehg-CSQ",
+      description:"<p>Single Page Aplication (SPA)</p><br><p>SQL · Hojas de estilos en cascada (CSS) · HTML5 · Resolución de problemas · Sequelize.js · PostgreSQL · React.js · Node.js · Redux.js · JavaScript · Git</p>",
+      deploy:{
+        icon:"https://www.svgrepo.com/show/480687/rocket.svg",
+        link:"https://videogameshenry.vercel.app/"
+      },
+      repository:{
+        icon:"https://www.svgrepo.com/show/475654/github-color.svg",
+        link:"https://github.com/Camilo-845/Henry-PI",
+      },
+    },
+  ],
+  secondary:[
+    {     
+      name:"Proyecto Inventario - Backend - Django",
+      repository:{
+        icon:"https://www.svgrepo.com/show/475654/github-color.svg",
+        link:"https://github.com/Camilo-845/Proyecto_Inventario_Backend",
+      },
+    },
+    {     
+      name:"Proyecto Java MVC",
+      repository:{
+        icon:"https://www.svgrepo.com/show/475654/github-color.svg",
+        link:"https://github.com/Camilo-845/Proyecto_Java_MVC",
+      },
+    }
+  ],
+}
