@@ -32,20 +32,24 @@ function Contact() {
     }
     return (
         <div id="contact" className={styles.mainContainer}>
-            <div className={styles.contactContainer}>
-                <form onSubmit={e => HandleSubmit(e)} className={styles.formContainer} action="">
-                    <input name="name" onChange={e => HandleChange(e)} className={styles.TextInput} type="text" placeholder="Name..." value={state.name} />
-                    <input name="email" onChange={e => HandleChange(e)} className={styles.TextInput} type="email" placeholder="Email..." value={state.email} />
-                    <textarea name="message" onChange={e => HandleChange(e)} className={styles.messageInput} id="" cols="30" rows="10" placeholder="Message..." value={state.message}></textarea>
-                    <input className={styles.submitButton} type="submit" value="Submit" />
-                </form>
-                <div className={styles.snContainer}>
-                    <a href="https://github.com/Camilo-845" target="_blank">
-                        <img src={GitHubImage} alt="" />
-                    </a>
-                    <a href="https://www.linkedin.com/in/camilo-sarmiento-051a80244" target="_blank">
-                        <img src={LinkedInImage} alt="" />
-                    </a>
+            <div className={styles.imageFormContainer}>
+            <img className={styles.planeImage} src="https://www.svgrepo.com/show/208137/paper-plane.svg" alt="" />
+                <div className={styles.contactContainer}>
+                    <h1>Contact</h1>
+                    <form onSubmit={e => HandleSubmit(e)} className={styles.formContainer} action="">
+                        <input name="name" onChange={e => HandleChange(e)} className={styles.TextInput} type="text" placeholder="Name..." value={state.name} />
+                        <input name="email" onChange={e => HandleChange(e)} className={styles.TextInput} type="email" placeholder="Email..." value={state.email} />
+                        <textarea name="message" onChange={e => HandleChange(e)} className={styles.messageInput} id="" cols="30" rows="10" placeholder="Message..." value={state.message}></textarea>
+                        <input className={styles.submitButton} type="submit" value="Submit" />
+                    </form>
+                    <div className={styles.snContainer}>
+                        <a href="https://github.com/Camilo-845" target="_blank">
+                            <img src={GitHubImage} alt="" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/camilo-sarmiento-051a80244" target="_blank">
+                            <img src={LinkedInImage} alt="" />
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

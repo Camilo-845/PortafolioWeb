@@ -14,19 +14,37 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60%;
+  width: 80%;
 }
 
 .contactContainer {
-  position: relative;
-  background-color: azure;
-  width: 350px;
-  height: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 40px;
+}
+
+.contactContainer h1{
+  align-self: flex-start;
+  margin: 5px 1rem;
+  font-size: 2rem;
+}
+
+.imageFormContainer{
+  max-width: 80%;
+  border-radius: 3rem;
+  position: relative;
+  background-color: #ede3b5e7;
+  padding: 2rem;
+  display: flex;
+  height: min-content;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+}
+
+.planeImage{
+  width: 12rem;
 }
 
 .TextInput {
@@ -34,7 +52,8 @@
   height: 25px;
   margin: 5px;
   border-radius: 10px;
-  padding-left: 5px;
+  border: none;
+  padding: 0.3rem;
 }
 
 .messageInput {
@@ -44,15 +63,18 @@
   width: 100%;
   resize: none;
   padding-left: 5px;
+  border: none;
 }
 .submitButton {
   margin-top: 15px;
-  width: 150px;
-  height: 30px;
-  border-radius: 6px;
+  width: 100%;
+  border-radius: 1rem;
   border: none;
-  background-color: brown;
-  color: white;
+  background-color: #edcd2e;
+  color: rgb(5, 5, 5);
+  font-weight: 1000;
+  font-size: 1.2rem;
+  padding: 0.5rem;
 }
 .submitButton:hover {
   cursor: pointer;
