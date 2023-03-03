@@ -1,7 +1,83 @@
 .mainContainer{
-    height:100vh;
+    height:min-content;
 /*     background-color: rgba(47, 0, 255, 0.559); */
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 3rem;
 }
-.mainContainer h1{
-    margin: 0px;
+.mainContainer img{
+    border-radius: 1rem;
+    width: 100%;
+}
+
+.principalWorks{
+    width: 40%;
+    min-width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+.secondaryWorks{
+    width: 40%;
+    min-width: 450px;
+}
+
+.principalWork{
+    position: relative;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.principaLinks {
+    z-index: 2;
+    position: absolute;
+    right: 35%;
+    bottom: -2rem;
+    transition: transform .2s;
+}
+
+.principaLinks img:hover{
+    transform: scale(1.1);
+}
+
+.principaLinks img{
+    transition: transform .2s;
+    margin: 0px 10px;
+    height: 3rem;
+    width: 3rem;
+    background-color:white;
+    border: 2px solid black;
+    padding: 4px;
+    border-radius: 100%;
+}
+
+.principalInfo h1{
+    font-size: small;
+    margin:0px;
+}
+
+.principalInfo{
+    border-radius: 1rem;
+    padding: 5px;
+    display: none;
+    top: 0px;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height:calc(100% - 1rem) ;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.439);
+    text-align: left;
+    padding-bottom: 1rem;
+    font-size: small;
+}
+
+.principalInfo h2{
+    margin: 2px 0px;
+}
+
+.principalWork:hover .principalInfo{
+    display: block;
 }
