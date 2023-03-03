@@ -5,7 +5,7 @@ import NavBar from './Components/NavBar/Navbar'
 import Resume from "./Components/resume/Resume"
 import Landing from "./Components/Landing/Landing"
 import Contact from './Components/Contact/Contact'
-import Work from './Components/work/work'
+import Work from './Components/Work/Work'
 
 function App() {
   return (

@@ -32,6 +32,20 @@ function Work(){
             </div>
             <div className={styles.secondaryWorks}>
                 <h2>Other proyects</h2>
+                {WORK_DATA.secondary.map(el=>{
+                    return(
+                    <div className={styles.secondaryWork}>
+                        <h3>{el.name}</h3>
+                        <div className={styles.secondaryLinks}>
+                            {el.deploy? <a href={el.deploy.link} target="_blank">
+                                <img src={el.deploy.icon} alt="" />
+                            </a>:false}
+                            {el.repository? <a href={el.repository.link} target="_blank">
+                                <img src={el.repository.icon} alt="" />
+                            </a>:false}
+                        </div>
+                    </div>)
+                })}
             </div>
         </div>
     )
