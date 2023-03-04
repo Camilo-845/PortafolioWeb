@@ -4,7 +4,7 @@ import downloadImage from "../../assets/download-svgrepo-com.png"
 
 function Landing(){
     return (
-        <div className={styles.mainContainer}>
+        <div id="resume" className={styles.mainContainer}>
             <div className={styles.dataContainer}>
                 <h1>Hello!</h1><br /><br />
                 <h1>My name is Camilo <br/> Sarmiento</h1><br /><br />

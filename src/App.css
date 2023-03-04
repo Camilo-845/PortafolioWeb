@@ -7,7 +7,8 @@ html{
   scroll-behavior:smooth;
 }
 #footer{
-  background-color: azure;
+  background-color: #2fb58d;
+  color: #F1F8F9;
 }
 #footer h3{
   margin: 0px;

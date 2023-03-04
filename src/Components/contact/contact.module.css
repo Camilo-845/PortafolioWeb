@@ -1,10 +1,12 @@
 .mainContainer {
   height: 100vh;
-/*   background-color: rgba(0, 255, 255, 0.708); */
+  /*   background-color: rgba(0, 255, 255, 0.708); */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: right /* fixed */ url(../../assets/background_4.svg);
+  background-size: cover;
 }
 .mainContainer h1 {
   margin: 0px;
@@ -24,17 +26,18 @@
   justify-content: center;
 }
 
-.contactContainer h1{
+.contactContainer h1 {
   align-self: flex-start;
   margin: 5px 1rem;
   font-size: 2rem;
+  color: #f1f8f9;
 }
 
-.imageFormContainer{
+.imageFormContainer {
   max-width: 80%;
   border-radius: 3rem;
   position: relative;
-  background-color: #ede3b5e7;
+  background-color: #2e286f59;
   padding: 2rem;
   display: flex;
   height: min-content;
@@ -43,8 +46,14 @@
   justify-content: space-around;
 }
 
-.planeImage{
+.planeImage {
   width: 12rem;
+  opacity: 90%;
+  transition: transform 0.2s;
+}
+
+.planeImage:hover {
+  transform: scale(1.05);
 }
 
 .TextInput {
@@ -54,6 +63,7 @@
   border-radius: 10px;
   border: none;
   padding: 0.3rem;
+  background-color: #f1f8f9c3;
 }
 
 .messageInput {
@@ -64,19 +74,22 @@
   resize: none;
   padding-left: 5px;
   border: none;
+  background-color: #f1f8f9c3;
 }
 .submitButton {
   margin-top: 15px;
   width: 100%;
   border-radius: 1rem;
   border: none;
-  background-color: #edcd2e;
+  background-color: #edcd2ee0;
   color: rgb(5, 5, 5);
   font-weight: 1000;
   font-size: 1.2rem;
   padding: 0.5rem;
+  transition: transform 0.2s;
 }
 .submitButton:hover {
+  transform: scale(1.07);
   cursor: pointer;
 }
 
@@ -88,9 +101,14 @@
   margin: 20px;
   /*   width: 20px;
     height: 20px; */
-}
-.snContainer a img {
-  border-radius: 100%;
-  width: 55px;
-  height: 55px;
+  }
+  .snContainer a img:hover {
+    transform: scale(1.1);
+  }
+  
+  .snContainer a img {
+    border-radius: 100%;
+    width: 55px;
+    height: 55px;
+    transition: transform 0.2s;
 }

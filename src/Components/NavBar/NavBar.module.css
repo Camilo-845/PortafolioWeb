@@ -14,7 +14,8 @@
     font-size: large;
 }
 .mainContainer div a{
-    color: white;
+    color: #D4E9ED;
+    /* color: white; */
 }
 .mainContainer button {
     margin: 3px;

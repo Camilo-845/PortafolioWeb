@@ -1,5 +1,6 @@
 .mainContainer{
     height:min-content;
+    min-height: 100vh;
 /*     background-color: rgba(47, 0, 255, 0.559); */
     display: flex;
     justify-content: space-around;
@@ -7,7 +8,13 @@
     align-items: center;
     flex-wrap: wrap;
     padding-top: 1rem;
+    /* background: #06a77d; */
+    background: right url(../../assets/background_5.svg);
+    background-size: cover;
+/*     background: -webkit-linear-gradient(0deg, #06a77d 0%, #2e286f 100%);
+    background: linear-gradient(0deg, #06a77d 0%, #2e286f 100%); */
 }
+
 .mainContainer img{
     border-radius: 1rem;
     width: 100%;
@@ -22,8 +29,12 @@
 
 .principalWork{
     position: relative;
-    width: 100%;
     margin-bottom: 2rem;
+    width: 100%;
+}
+
+.principalWork img{
+    width: calc(100% + 7px);
 }
 
 .principaLinks {
@@ -40,6 +51,7 @@
 
 .principaLinks img{
     transition: transform .2s;
+    position: relative;
     margin: 0px 10px;
     height: 3.5rem;
     width: 3.5rem;
@@ -47,7 +59,7 @@
 }
 
 .principalInfo h1{
-    font-size: small;
+    font-size:large;
     margin:0px;
 }
 
@@ -59,12 +71,15 @@
     position: absolute;
     z-index: 1;
     width: 100%;
+    height: 100%;
     height:calc(100% - 1rem) ;
     backdrop-filter: blur(4px);
-    background-color: rgba(0, 0, 0, 0.439);
+/*     background: rgba(241, 241, 241, 0.44);
+    background: -webkit-linear-gradient(0deg, rgba(241, 241, 241, 0.44) 0%, rgba(250, 250, 250, 0) 100%);
+    background: linear-gradient(0deg, rgba(241, 241, 241, 0.44) 0%, rgba(250, 250, 250, 0) 100%); */
+    background-color: #00000070;
     text-align: left;
     padding-bottom: 1rem;
-    font-size: small;
     overflow-y: scroll;
 }
 
@@ -88,8 +103,9 @@
 .secondaryWorks{
     width: 40%;
     min-width: 450px;
-    background-color: rgb(113, 113, 113);
- /*    border-radius: 2rem; */
+    background-color: #170a1c92;
+    /* background-color: rgb(113, 113, 113); */
+    border-radius: 2rem;
     height: min-content;
     display: flex;
     flex-direction: column;
@@ -97,8 +113,8 @@
     padding: 1rem 0rem;
     max-height: 80vh;
     overflow-y: scroll;
-    border-bottom-left-radius: 1rem;
-    border-top-left-radius: 1rem;
+/*     border-bottom-left-radius: 1rem;
+    border-top-left-radius: 1rem; */
 }
 
 .secondaryWorks h2{
@@ -117,7 +133,8 @@
 .secondaryWork{
     padding: 0.1rem 0.5rem;
     width: 80%;
-    background-color: rgb(156, 156, 156);
+    background-color: #170a1c62;
+    /* background-color: rgb(156, 156, 156); */
     display: flex;
     justify-content: space-between;
     margin: 5px 0px;

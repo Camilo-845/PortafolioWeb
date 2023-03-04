@@ -3,22 +3,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background-color: #2E286F; */
+    background: right fixed url(../../assets/background_2.svg);
+    background-size: cover;
 }
 .mainContainer h1{
     margin: 0px;
-    color: rgb(209, 209, 209);
+    color: #CED3F2;
 }
 
 .dataContainer{
     display: flex;
     height: 60%;
     flex-direction: column;
-    background-color: grey;
+    background-color: #4545c290;
+    /* background-color: grey; */
     padding: 30px;
     border-radius: 50px;
     position: relative;
     align-items: center;
     justify-content: space-around;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 .buttonsContainer{
@@ -28,16 +33,25 @@
 }
 
 .buttonsContainer button{
-    color: white;
+    color: 170A1C;
     font-weight: 1000;
-    background-color: rgb(95, 95, 95);
+    background-color: #06a77cc3;
+    -webkit-box-shadow: 0 15.5px 13px -3.5px rgba(3, 79, 59, 0.47);
+    -moz-box-shadow: 0 15.5px 13px -3.5px rgba(3, 79, 59, 0.47);
+    box-shadow: 0 15.5px 13px -3.5px rgba(3, 79, 59, 0.47);
+   /*  background-color: rgb(95, 95, 95); */
     margin: 10px;
     font-size: x-large;
     border-radius: 20px;
-    border: 1px solid rgb(138, 138, 138);
+  /*   border: 1px solid rgb(138, 138, 138); */
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: transform .2s;
+}
+
+.buttonsContainer button:hover{
+    transform: scale(1.1);
 }
 
 .downloadImage{
@@ -53,7 +67,7 @@
         bottom: none;
         padding: 0px;
     }
-    .buttonsContainer bottom{
+    .buttonsContainer button{
         width: 100%;
     }
     .dataContainer{

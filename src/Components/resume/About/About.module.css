@@ -1,8 +1,14 @@
 .mainContainer{
-    height:100vh;
+    height:120vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background-color: #170A1C; */
+/*     background: #170A1C;
+    background: -webkit-linear-gradient(0deg, #4545c2 0%, #170a1c 100%);
+    background: linear-gradient(0deg, #4545c2 0%, #170a1c 100%); */
+    background: right fixed url(../../../assets/background_3.svg);
+    background-size: cover;
     /*     background-color: #faead6ba; */
 }
 .dataContainer{
@@ -13,19 +19,19 @@
     align-items: center;
     height: min-content;
     width: 60%;
-    background-color: gray;
+    background-color: #2E286F;
     font-size: 1.1rem;
     border-radius: 3rem;
     text-align: left;
     padding: 2rem;
-    color: white;
+    color: #F1F8F9;
 }
 .dataContainer h2{
     margin: 0px;
 }
 .dataContainer h3{
     margin: 0px;
-    color: rgb(235, 235, 235);
+    color: #CED3F2;
     font-size: 1.4rem;
 /*     height: 100%;
     text-align: center; */
