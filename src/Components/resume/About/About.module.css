@@ -79,12 +79,15 @@
     .dataContainer {
         width: 80%;
         font-size: 0.9rem;
+        padding: 2rem 1rem;
+        text-align: center;
     }
     .dataContainer h3 {
       font-size: 1rem;
     }
     .imageContiner{
         top:-3rem;
+        right: calc(50% - 2.5rem);
         width: 5rem;
     }
 }
