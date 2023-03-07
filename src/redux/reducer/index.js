@@ -1,7 +1,7 @@
-import { POST_MAIL } from "../actions";
+import { POST_MAIL, SET_IDIOM} from "../actions";
 
 const initialState = {
-
+    idiom:"EN",
 }
 
 const rootReducer = (state = initialState, action)=>{
@@ -9,6 +9,11 @@ const rootReducer = (state = initialState, action)=>{
         case POST_MAIL:
             return{
                 ...state
+            }
+        case SET_IDIOM:
+            return{
+                ...state,
+                idiom:action.payload
             }
     }
 }
