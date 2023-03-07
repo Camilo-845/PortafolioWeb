@@ -8,6 +8,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { postMail } from "../../redux/actions";
 
 function Contact() {
+    const idiom = useSelector(state=>(state!=undefined)?state.idiom:"EN")
 
     const dispatch = useDispatch()
 
@@ -25,7 +26,7 @@ function Contact() {
     const HandleSubmit = (e) => {
         e.preventDefault();
         if(Object.values(state).some((el)=>el.length===0)){
-            toast.error("fatan campos por llenar");
+            toast.error((idiom=="EN")?"Missing fields to fill":"fatan campos por llenar");
         }else{
             dispatch(postMail(state))
             setState({
@@ -33,7 +34,7 @@ function Contact() {
                 email: "",
                 message: "",
             })
-            toast.success("Enviado correctamente")
+            toast.success((idiom=="EN")?"Sent successfully.":"Enviado correctamente")
         }
     }
     return (
@@ -42,12 +43,12 @@ function Contact() {
             <div className={styles.imageFormContainer}>
             <img className={styles.planeImage} src="https://www.svgrepo.com/show/208137/paper-plane.svg" alt="" />
                 <div className={styles.contactContainer}>
-                    <h1>Contact</h1>
+                    <h1>{(idiom=="EN")?"Contact":"Contacto"}</h1>
                     <form onSubmit={e => HandleSubmit(e)} className={styles.formContainer} action="">
-                        <input name="name" onChange={e => HandleChange(e)} className={styles.TextInput} type="text" placeholder="Name..." value={state.name} />
+                        <input name="name" onChange={e => HandleChange(e)} className={styles.TextInput} type="text" placeholder={(idiom=="EN")?"Name...":"Nombre..."} value={state.name} />
                         <input name="email" onChange={e => HandleChange(e)} className={styles.TextInput} type="email" placeholder="Email..." value={state.email} />
-                        <textarea name="message" onChange={e => HandleChange(e)} className={styles.messageInput} id="" cols="30" rows="10" placeholder="Message..." value={state.message}></textarea>
-                        <input className={styles.submitButton} type="submit" value="Submit" />
+                        <textarea name="message" onChange={e => HandleChange(e)} className={styles.messageInput} id="" cols="30" rows="10" placeholder={(idiom=="EN")?"Message...":"Mensaje..."} value={state.message}></textarea>
+                        <input className={styles.submitButton} type="submit" value={(idiom=="EN")?"Submit":"Enviar"}/>
                     </form>
                     <div className={styles.snContainer}>
                         <a href="https://github.com/Camilo-845" target="_blank">

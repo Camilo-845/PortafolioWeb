@@ -22,17 +22,17 @@ function NavBar() {
     return (
         <div className={styles.mainContainer}>
             <div>
-                <a href="#resume">Resume</a>
+                <a href="#resume">{(idiom=="EN")?"Resume":"Sobre mi"}</a>
             </div>
             <div>
-                <a href="#work">Work</a>
+                <a href="#work">{(idiom=="EN")?"Work":"Proyectos"}</a>
             </div>
             <div>
-                <a href="#contact">Contact</a>
+                <a href="#contact">{(idiom=="EN")?"Contact":"Contacto"}</a>
             </div>
-            <button className={styles.darkMode}>
-                {/* <img src="" alt="" /> */}
-            </button>
+            {/* <button className={styles.darkMode}>
+                {/* <img src="" alt="" />
+            </button> */}
             <button className={styles.traslate} onClick={HandleSetIdiom}>
                 {idiom}
                 {/* <img src="" alt="" /> */}

@@ -3,19 +3,21 @@ import styles from "./Landing.module.css"
 import downloadImage from "../../assets/download-svgrepo-com.png"
 import CV from "../../assets/CV  EN.pdf"
 import toast, { Toaster } from 'react-hot-toast';
-
+import { useSelector } from "react-redux";
 
 function Landing(){
+    const idiom = useSelector(state=>(state!=undefined)?state.idiom:"EN")
+
     const notify = () => toast('Download');
     return (
         <div id="resume" className={styles.mainContainer}>
             <div className={styles.dataContainer}>
-                <h1>Hi!</h1><br /><br />
-                <h1>My name is Camilo <br/> Sarmiento</h1><br /><br />
-                <h1>I'm a Full Stack Developer</h1><br /><br />
+                <h1>{(idiom=="EN")?"Hi!":"Hola!"}</h1><br /><br />
+                <h1>{(idiom=="EN")?"My name is Camilo":"Mi nombre es Camilo"}<br/> Sarmiento</h1><br /><br />
+                <h1>{(idiom=="EN")?"I'm a Full Stack Developer":"Soy desarrollador FullStack"}</h1><br /><br />
                 <div className={styles.buttonsContainer}>
                     <a href={CV} target="_blank">
-                        <button>View CV</button>
+                        <button>{(idiom=="EN")?"View":"Ver"} CV</button>
                     </a>
                     <a href={CV} download="CV_Camilo_Sarmiento_FullStack" onClick={notify}>
                         <button>
@@ -23,7 +25,7 @@ function Landing(){
                             CV
                         </button>
                     </a>
-                    <a href="#contact"><button>Contact</button></a>
+                    <a href="#contact"><button>{(idiom=="EN")?"Contact":"Contacto"}</button></a>
                 </div>
             </div>
         </div>

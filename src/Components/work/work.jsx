@@ -1,8 +1,11 @@
 import React from "react";
 import styles from "./Work.module.css";
 import { WORK_DATA } from "../../utils/data";
+import { useSelector } from "react-redux";
 
 function Work(){
+    const idiom = useSelector(state=>(state!=undefined)?state.idiom:"EN")
+    
     return (
         <div id="work" className={styles.mainContainer}>
             <div className={styles.principalWorks}>
@@ -25,7 +28,7 @@ function Work(){
                             <div className={styles.principalInfo}>
                                 <div>
                                     <h2>{el.name}</h2>
-                                    <div dangerouslySetInnerHTML={{ __html: el.description }} />
+                                    <div dangerouslySetInnerHTML={{ __html: el.description[idiom] }} />
                                 </div>
                             </div>
                         </div>
@@ -33,7 +36,7 @@ function Work(){
                 })}
             </div>
             <div className={styles.secondaryWorks}>
-                <h2>Other proyects</h2>
+                <h2>{(idiom=="EN")?"Other proyects":"Otros proyectos"}</h2>
                 {WORK_DATA.secondary.map(el=>{
                     return(
                     <div className={styles.secondaryWork} key={el.name}>
