@@ -34,7 +34,7 @@ function Work(){
                 <h2>Other proyects</h2>
                 {WORK_DATA.secondary.map(el=>{
                     return(
-                    <div className={styles.secondaryWork}>
+                    <div className={styles.secondaryWork} key={el.name}>
                         <h3>{el.name}</h3>
                         <div className={styles.secondaryLinks}>
                             {el.deploy? <a href={el.deploy.link} target="_blank">

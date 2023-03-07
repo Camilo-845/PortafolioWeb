@@ -1,4 +1,5 @@
 import React from "react";
+import toast, { Toaster } from 'react-hot-toast';
 import styles from "./Contact.module.css"
 import { useState } from "react";
 import GitHubImage from "../../assets/github.png";
@@ -23,15 +24,21 @@ function Contact() {
     }
     const HandleSubmit = (e) => {
         e.preventDefault();
-        dispatch(postMail(state))
-        setState({
-            name: "",
-            email: "",
-            message: "",
-        })
+        if(Object.values(state).some((el)=>el.length===0)){
+            toast.error("fatan campos por llenar");
+        }else{
+            dispatch(postMail(state))
+            setState({
+                name: "",
+                email: "",
+                message: "",
+            })
+            toast.success("Enviado correctamente")
+        }
     }
     return (
         <div id="contact" className={styles.mainContainer}>
+            <Toaster position="bottom-left"/>
             <div className={styles.imageFormContainer}>
             <img className={styles.planeImage} src="https://www.svgrepo.com/show/208137/paper-plane.svg" alt="" />
                 <div className={styles.contactContainer}>
