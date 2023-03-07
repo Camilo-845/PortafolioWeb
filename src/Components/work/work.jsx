@@ -23,8 +23,10 @@ function Work(){
                                 :false}
                             </div>
                             <div className={styles.principalInfo}>
-                                <h2>{el.name}</h2>
-                                <div dangerouslySetInnerHTML={{ __html: el.description }} />
+                                <div>
+                                    <h2>{el.name}</h2>
+                                    <div dangerouslySetInnerHTML={{ __html: el.description }} />
+                                </div>
                             </div>
                         </div>
                     )

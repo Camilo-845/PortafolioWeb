@@ -31,10 +31,12 @@
     position: relative;
     margin-bottom: 2rem;
     width: 100%;
+    border-radius: 2rem;
 }
 
 .principalWork img{
-    width: calc(100% + 7px);
+    overflow: hidden;
+    width: 100%;
 }
 
 .principaLinks {
@@ -64,38 +66,47 @@
 }
 
 .principalInfo{
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 1rem;
-    padding: 5px;
     display: none;
     top: 0px;
     position: absolute;
     z-index: 1;
     width: 100%;
-    height: 100%;
-    height:calc(100% - 1rem) ;
+    height:100%;
     backdrop-filter: blur(4px);
 /*     background: rgba(241, 241, 241, 0.44);
     background: -webkit-linear-gradient(0deg, rgba(241, 241, 241, 0.44) 0%, rgba(250, 250, 250, 0) 100%);
     background: linear-gradient(0deg, rgba(241, 241, 241, 0.44) 0%, rgba(250, 250, 250, 0) 100%); */
     background-color: #00000070;
     text-align: left;
-    padding-bottom: 1rem;
-    overflow-y: scroll;
+    /* padding-bottom: 1rem; */
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    /* display: flex; */
 }
 
-.principalInfo::-webkit-scrollbar {
-    width: 6px;
-}
 
 .principalInfo h2{
     margin: 2px 0px;
 }
 
 .principalWork:hover .principalInfo{
-    display: block;
+    display: flex;
 }
 
-.principalInfo::-webkit-scrollbar-thumb {
+.principalInfo > div{
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    overflow-y: scroll;
+}
+.principalInfo > div::-webkit-scrollbar {
+    width: 6px;
+}
+
+.principalInfo > div::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.589);
     border-radius: 6px;
 }
