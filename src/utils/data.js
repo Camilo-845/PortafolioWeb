@@ -1,3 +1,5 @@
+import videogames_app_capture from "../assets/videogames_capture.jpg"
+
 export const PROFILE_DATA = {
   about_me_1:
     "Derrollador Full Stack, dispuesto a afrontar retos y siempre aprender más.",
@@ -118,7 +120,7 @@ export const WORK_DATA = {
     },
     {
       name:"VideoGames",
-      image:"https://media.licdn.com/dms/image/C4E2DAQHyHmZbmwTfPA/profile-treasury-image-shrink_800_800/0/1669234501095?e=1677898800&v=beta&t=O6K6BsBsxe_xOE5c5DwjyEVArWxJ-PXAagdbehg-CSQ",
+      image:videogames_app_capture/* "https://media.licdn.com/dms/image/C4E2DAQHyHmZbmwTfPA/profile-treasury-image-shrink_800_800/0/1669234501095?e=1677898800&v=beta&t=O6K6BsBsxe_xOE5c5DwjyEVArWxJ-PXAagdbehg-CSQ" */,
       description:"<p>Single Page Aplication (SPA)</p><p>SQL · Hojas de estilos en cascada (CSS) · HTML5 · Resolución de problemas · Sequelize.js · PostgreSQL · React.js · Node.js · Redux.js · JavaScript · Git</p>",
       deploy:{
         icon:"https://cdn-icons-png.flaticon.com/512/9869/9869419.png",
