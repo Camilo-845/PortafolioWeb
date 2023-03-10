@@ -10,7 +10,7 @@ function Landing(){
 
     const notify = () => toast('Download');
     return (
-        <div id="resume" className={styles.mainContainer}>
+        <div className={`${styles.mainContainer} section`}>
             <div className={styles.dataContainer}>
                 <h1>{(idiom=="EN")?"Hi!":"Hola!"}</h1><br /><br />
                 <h1>{(idiom=="EN")?"My name is Camilo":"Mi nombre es Camilo"}<br/> Sarmiento</h1><br /><br />

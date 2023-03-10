@@ -1,3 +1,10 @@
+.activeLink{
+    color: white;
+    font-weight: 800;
+}
+.link{
+    color: #D4E9ED;
+}
 .mainContainer{
     width: 99%;
     position: fixed;
@@ -13,9 +20,8 @@
     margin: 5px 10px;
     font-size: large;
 }
-.mainContainer div a{
-    color: #D4E9ED;
-    /* color: white; */
+.mainContainer div a:hover{
+    color: white;
 }
 .mainContainer button {
     margin: 3px;

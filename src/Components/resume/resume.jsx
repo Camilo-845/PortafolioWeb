@@ -10,7 +10,7 @@ function Resume() {
     return (
         /* <div id="resume" className={styles.mainContainer}> */
             /* <ResumeNavbar></ResumeNavbar> */
-            <div className={styles.componentsContainer}>
+            <div id="resume" className={`section ${styles.componentsContainer}`}>
                 <About></About>
                 <Skills></Skills>
                 <Education></Education>

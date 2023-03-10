@@ -95,7 +95,10 @@
 
 .principalWork:hover .principalInfo{
     display: flex;
+    animation:blur-out .2s linear both
 }
+
+@keyframes blur-out{100%{filter:blur(.01px);}0%{filter:blur(12px);opacity:0}}
 
 .principalInfo > div{
     width: calc(100% - 2rem);

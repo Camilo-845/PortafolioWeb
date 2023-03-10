@@ -14,7 +14,7 @@ function App() {
     <div className="App">
       <NavBar></NavBar>
       <Landing></Landing>
-      <Resume></Resume>
+      <Resume ></Resume>
       <Work></Work>
       <Contact></Contact>
       <div id='footer'>

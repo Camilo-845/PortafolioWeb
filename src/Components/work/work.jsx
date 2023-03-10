@@ -7,7 +7,7 @@ function Work(){
     const idiom = useSelector(state=>(state!=undefined)?state.idiom:"EN")
     
     return (
-        <div id="work" className={styles.mainContainer}>
+        <div id="work" className={` ${styles.mainContainer} section`} >
             <div className={styles.principalWorks}>
                 {WORK_DATA.principal.map(el=>{
                     return (

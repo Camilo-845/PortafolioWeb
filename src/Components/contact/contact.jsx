@@ -38,7 +38,7 @@ function Contact() {
         }
     }
     return (
-        <div id="contact" className={styles.mainContainer}>
+        <div id="contact" className={`${styles.mainContainer} section`} >
             <Toaster position="bottom-left"/>
             <div className={styles.imageFormContainer}>
             <img className={styles.planeImage} src="https://www.svgrepo.com/show/208137/paper-plane.svg" alt="" />
