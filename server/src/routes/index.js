@@ -34,9 +34,8 @@ router.post("/mail", async (req, res) => {
 
 
 
-    const userEmail = await send_mail(email,"Message sent successfully", html2)
-    await send_mail(GOOGLE_ACCOUNT,"New Conctact Message", html1)
-    console.log(userEmail)
+    const userEmail = await send_mail(email,"Message sent successfully", html1)
+    await send_mail(GOOGLE_ACCOUNT,"New Conctact Message", html2)
     res.status(204);
   } catch (err) {
     res.status(400).send(new Error(err).message);

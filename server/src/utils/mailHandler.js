@@ -23,7 +23,7 @@ const send_mail = async (email, subject, html) => {
       html: html,
     });
   } catch (err) {
-    console.err(new Error(err).message);
+    console.err("Error: ",new Error(err).message);
   }
 };
 
