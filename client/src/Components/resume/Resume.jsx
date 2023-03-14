@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./resume.module.css"
+/* import styles from "./resume.module.css" */
 
 import About from "./About/About";
 import Education from "./Education/Education"
@@ -10,7 +10,7 @@ function Resume() {
     return (
         /* <div id="resume" className={styles.mainContainer}> */
             /* <ResumeNavbar></ResumeNavbar> */
-            <div id="resume" className={`section ${styles.componentsContainer}`}>
+            <div id="resume" className={`section`}> {/* ${styles.componentsContainer} */}
                 <About></About>
                 <Skills></Skills>
                 <Education></Education>
