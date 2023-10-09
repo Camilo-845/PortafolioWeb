@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Landing.module.css"
 import downloadImage from "../../assets/download-svgrepo-com.png"
-import CV from "../../assets/CV  EN.pdf"
+import CV from "../../assets/CV - Camilo Sarmiento.pdf"
 import toast, { Toaster } from 'react-hot-toast';
 import { useSelector } from "react-redux";
 
@@ -19,7 +19,7 @@ function Landing(){
                     <a href={CV} target="_blank">
                         <button>{(idiom=="EN")?"View":"Ver"} CV</button>
                     </a>
-                    <a href={CV} download="CV_Camilo_Sarmiento_FullStack" onClick={notify}>
+                    <a href={(idiom=="EN")?CV:CV} download="CV_Camilo_Sarmiento_FullStack" onClick={notify}>
                         <button>
                             <img className={styles.downloadImage} src={downloadImage} alt="" />
                             CV
